@@ -8,4 +8,7 @@ use Jenssegers\Mongodb\Eloquent\Model;
 class Page extends Model
 {
     use HasFactory;
+    public function component(){
+        return $this->belongsTo(Component::class);
+    }
 }

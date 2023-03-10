@@ -9,9 +9,9 @@ class Content extends Model
 {
     use HasFactory;
 
-    public function languages()
+    public function translations()
     {
-        return $this->belongsToMany(Language::class, null, "content_id", "language_id")->withPivot('translation');
+        return $this->hasMany(Translation::class);
     }
 
 }
