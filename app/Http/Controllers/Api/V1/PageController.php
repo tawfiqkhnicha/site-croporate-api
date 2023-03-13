@@ -5,8 +5,8 @@ use App\Http\Controllers\BaseApi;
 use Illuminate\Http\Request;
 use App\Managers\PageManager\PageManager;
 class PageController extends BaseApi//classe mere dyel ga3les fonctions
-{
-   function __construct( protected PageManager $pageManager) {
+
+   function __construct(protected  PageManager $pageManager) { 
     }
 
 
@@ -15,5 +15,4 @@ class PageController extends BaseApi//classe mere dyel ga3les fonctions
     return $this->pageManager ;
    }
 }
-
 // no more code here
