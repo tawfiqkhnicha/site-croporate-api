@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\V1\PageController;
+use App\Http\Controllers\Api\V1\TranslationController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -15,6 +17,8 @@ use App\Http\Controllers\Api\V1\PageController;
 */
 Route::group(['prefix' => 'v1', 'as' => 'api.'], function () {
     Route::get('page', [PageController::class, 'index']);
+    Route::get('translation', [TranslationController::class, 'getAll']);
+    Route::post('translation/add', [TranslationController::class, 'addTranslation']);
 });
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
