@@ -13,5 +13,4 @@ class PageController extends BaseApi//classe mere dyel ga3les fonctions
     return $this->pageManager ;
    }
 }
-
 // no more code here
