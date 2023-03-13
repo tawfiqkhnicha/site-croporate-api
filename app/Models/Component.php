@@ -10,7 +10,7 @@ class Component extends Model
     use HasFactory;
 
     public function page(){
-        return $this->hasOne(Page::class);
+        return $this->belongsTo(Page::class);
     }
 
     public function props(){

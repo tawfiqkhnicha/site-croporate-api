@@ -3,15 +3,15 @@ namespace App\Http\Controllers;
 
 
 use Illuminate\Http\Request;
-use Interfaces\ICrud;
+use App\Interfaces\ICrud;
 
-abstract class BaseApi extends Controller implements ICrud 
+abstract class BaseApi implements ICrud 
 {
 
     abstract function defaultManager();
 
     function index()
-    {
+    { 
         return $this->defaultManager()->index();
     }
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Manager;
+namespace App\Managers\Manager;
 
 use App\Exceptions\MenapsException;
-use Interfaces\ICrud;
+use App\Interfaces\ICrud;
 use Illuminate\Http\Request;
 
 

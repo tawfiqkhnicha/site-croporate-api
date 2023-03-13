@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
 use Illuminate\Http\Request;
 
-class PropsController extends  BaseApi
+class ContentController extends  BaseApi
 {
    public function defaultManager()
    {

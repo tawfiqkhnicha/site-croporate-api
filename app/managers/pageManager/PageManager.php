@@ -1,10 +1,16 @@
 <?php
 
-namespace  App\Manager;
+namespace  App\Managers\PageManager;
 
-use App\Manager\BaseManager;
+use App\Managers\Manager\BaseManager;
 
 
-class PageManager extends BaseManager{
+class PageManager extends BaseManager {
+// etape 1 return all get all pages
+    function index() 
+    {
+       return "tawfiq ostouri" ;
+    }
 
+    
 }
