@@ -9,6 +9,6 @@ class Page extends Model
 {
     use HasFactory;
     public function component(){
-        return $this->belongsTo(Component::class);
+        return $this->hasMany(Component::class);
     }
 }

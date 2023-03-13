@@ -1,9 +1,9 @@
 <?php
 
 
-namespace  App\Manager;
+namespace  App\Managers\ComponentManager;
 
-use App\Manager\BaseManager;
+use App\Managers\Manager\BaseManager;
 
 
 class ComponentManager extends BaseManager{

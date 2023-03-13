@@ -1,8 +1,8 @@
 <?php
 
-namespace  App\Manager;
+namespace  App\Managers\PropsManager;
 
-use App\Manager\BaseManager;
+use App\Managers\Manager\BaseManager;
 
 
 class PropsManager extends BaseManager{
