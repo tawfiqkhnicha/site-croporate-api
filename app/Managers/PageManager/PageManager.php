@@ -25,7 +25,7 @@ class PageManager extends BaseManager {
     }
     public function show($id)
     {
-        $page = Page::find($id);
+        $page = Page::with("component.props")->find($id);
         if($page){
             return $this->sendResponse($page, 200);
         }else{
