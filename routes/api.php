@@ -16,9 +16,10 @@ use App\Http\Controllers\Api\V1\TranslationController;
 |
 */
 Route::group(['prefix' => 'v1', 'as' => 'api.'], function () {
-    Route::get('page', [PageController::class, 'index']);
+    // Route::get('page', [PageController::class, 'index']);
     Route::get('translation', [TranslationController::class, 'getAll']);
     Route::post('translation/add', [TranslationController::class, 'addTranslation']);
+    Route::apiResource('pages', PageController::class);
 });
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
